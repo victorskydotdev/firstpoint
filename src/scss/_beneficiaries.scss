@@ -1,6 +1,7 @@
 @import 'global';
 
 .beneficiaries-section {
+	margin-bottom: 7em;
 	.text-container {
 		width: 90%;
 		margin: 0 auto;
@@ -9,6 +10,10 @@
 		.heading {
 			font-size: $heading-font-size;
 			color: $dominant-color;
+		}
+
+		@media screen and (min-width: 43em) {
+			text-align: center;
 		}
 	}
 
@@ -21,7 +26,7 @@
 		-ms-scroll-snap-type: inline mandatory;
 		scroll-snap-type: inline mandatory;
 		padding: 2em 1em;
-		gap: 1.4em;
+		gap: 1em;
 
 		.wrap {
 			background: rgba(0, 69, 23, 0.527);
@@ -54,7 +59,7 @@
 
 				.ben-name {
 					border: 1.5px solid $accent-color;
-					padding: 0.5em 0;
+					padding: 0.5em 1em;
 					border-radius: 40px;
 					color: $light;
 
@@ -63,6 +68,12 @@
 					}
 				}
 			}
+		}
+
+		@media screen and (min-width: 62em) {
+			display: flex;
+			width: 80%;
+			margin: 0 auto;
 		}
 	}
 }
