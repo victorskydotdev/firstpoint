@@ -48,9 +48,30 @@
 				justify-content: center;
 				a {
 					display: block;
-					// width: fit-content;
+
 					color: $body-paragraph-text-color;
 					text-align: center;
+				}
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+
+			.contact-info {
+				.social-media {
+					justify-content: flex-end;
+				}
+
+				.phone-wrap {
+					justify-content: flex-end;
+
+					a {
+						text-align: right;
+					}
 				}
 			}
 		}

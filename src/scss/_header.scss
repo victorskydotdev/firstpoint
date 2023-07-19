@@ -23,7 +23,7 @@
 
 		.navbar {
 			position: fixed;
-			background: teal;
+			background: $dominant-color;
 			width: 90%;
 			height: 400px;
 			top: 15vh;
@@ -38,6 +38,12 @@
 				display: grid;
 				gap: 4.5em;
 				text-align: center;
+
+				.link {
+					a {
+						color: $light;
+					}
+				}
 			}
 		}
 
