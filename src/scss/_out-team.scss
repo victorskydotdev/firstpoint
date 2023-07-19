@@ -29,6 +29,7 @@
 				width: 60%;
 				margin-bottom: 2em;
 				border-radius: 15px;
+				aspect-ratio: 5/5;
 			}
 
 			.member-details {
@@ -36,15 +37,32 @@
 				margin: 0 auto;
 				text-align: left;
 
-				h4 {
-					margin-bottom: 0.5em;
+				.name {
+					margin-bottom: 0.2em;
+					font-size: 0.9rem;
+					color: $body-heading-text-color;
 				}
 
-				p {
-					margin-bottom: 1em;
-					color: $body-paragraph-text-color;
-					font-size: 0.9rem;
-					line-height: 1.9;
+				.designation {
+					color: $accent-color;
+					margin-bottom: 0.3em;
+				}
+
+				.readmore-btn {
+					background: transparent;
+					border: none;
+					font-family: $font-family;
+					cursor: pointer;
+				}
+
+				.readmore {
+					display: none;
+					p {
+						margin-bottom: 1em;
+						color: $body-paragraph-text-color;
+						font-size: 0.9rem;
+						line-height: 1.9;
+					}
 				}
 			}
 		}
@@ -59,4 +77,8 @@
 			width: 80%;
 		}
 	}
+}
+
+.readmore-active {
+	display: block;
 }

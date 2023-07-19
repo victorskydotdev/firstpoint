@@ -984,16 +984,32 @@ body {
   width: 60%;
   margin-bottom: 2em;
   border-radius: 15px;
+  aspect-ratio: 5/5;
 }
 .our-team-section .container .team-member-wrap .member-details {
   width: 90%;
   margin: 0 auto;
   text-align: left;
 }
-.our-team-section .container .team-member-wrap .member-details h4 {
-  margin-bottom: 0.5em;
+.our-team-section .container .team-member-wrap .member-details .name {
+  margin-bottom: 0.2em;
+  font-size: 0.9rem;
+  color: #4f4f4f;
 }
-.our-team-section .container .team-member-wrap .member-details p {
+.our-team-section .container .team-member-wrap .member-details .designation {
+  color: #f7b401;
+  margin-bottom: 0.3em;
+}
+.our-team-section .container .team-member-wrap .member-details .readmore-btn {
+  background: transparent;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+.our-team-section .container .team-member-wrap .member-details .readmore {
+  display: none;
+}
+.our-team-section .container .team-member-wrap .member-details .readmore p {
   margin-bottom: 1em;
   color: #a6a6a6;
   font-size: 0.9rem;
@@ -1010,6 +1026,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     width: 80%;
   }
+}
+
+.readmore-active {
+  display: block;
 }
 
 *,
