@@ -45,7 +45,14 @@
 
 				.designation {
 					color: $accent-color;
-					margin-bottom: 0.3em;
+					margin-bottom: 0.6em;
+					font-size: 0.9rem;
+				}
+
+				p {
+					color: $body-paragraph-text-color;
+					font-size: 0.9rem;
+					margin-bottom: 0.5em;
 				}
 
 				.readmore-btn {

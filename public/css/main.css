@@ -998,7 +998,13 @@ body {
 }
 .our-team-section .container .team-member-wrap .member-details .designation {
   color: #f7b401;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.6em;
+  font-size: 0.9rem;
+}
+.our-team-section .container .team-member-wrap .member-details p {
+  color: #a6a6a6;
+  font-size: 0.9rem;
+  margin-bottom: 0.5em;
 }
 .our-team-section .container .team-member-wrap .member-details .readmore-btn {
   background: transparent;
