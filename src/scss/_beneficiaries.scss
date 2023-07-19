@@ -1,0 +1,68 @@
+@import 'global';
+
+.beneficiaries-section {
+	.text-container {
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 2em;
+
+		.heading {
+			font-size: $heading-font-size;
+			color: $dominant-color;
+		}
+	}
+
+	.container {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 350px;
+		overflow-x: auto;
+		overscroll-behavior-inline: contain;
+		-ms-scroll-snap-type: inline mandatory;
+		scroll-snap-type: inline mandatory;
+		padding: 2em 1em;
+		gap: 1.4em;
+
+		.wrap {
+			background: rgba(0, 69, 23, 0.527);
+			width: 100%;
+			text-align: center;
+			padding: 2em 0;
+			border-radius: 15px;
+
+			div {
+				margin-bottom: 1em;
+
+				img {
+					width: 80%;
+
+					margin: 0 auto;
+					display: inline-block;
+				}
+			}
+
+			.text-wrap {
+				width: 80%;
+				margin: 0 auto;
+				.text {
+					font-size: 0.9rem;
+					line-height: 1.9;
+					text-align: left;
+					margin-bottom: 2em;
+					color: $light;
+				}
+
+				.ben-name {
+					border: 1.5px solid $accent-color;
+					padding: 0.5em 0;
+					border-radius: 40px;
+					color: $light;
+
+					span {
+						font-size: 0.7rem;
+					}
+				}
+			}
+		}
+	}
+}

@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -453,13 +454,13 @@ body {
 .programs .media-scroller {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: 400px;
+  grid-auto-columns: 350px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   -ms-scroll-snap-type: inline mandatory;
   scroll-snap-type: inline mandatory;
   padding: 2em 1em;
-  gap: 2em;
+  gap: 1.4em;
 }
 .programs .media-scroller .scrollable-box {
   height: 300px;
@@ -468,6 +469,90 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.programs .media-scroller .scrollable-box h3 {
+  width: 80%;
+  text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.beneficiaries-section .text-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+.beneficiaries-section .text-container .heading {
+  font-size: 1.7rem;
+  color: #004517;
+}
+.beneficiaries-section .container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 350px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -ms-scroll-snap-type: inline mandatory;
+  scroll-snap-type: inline mandatory;
+  padding: 2em 1em;
+  gap: 1.4em;
+}
+.beneficiaries-section .container .wrap {
+  background: rgba(0, 69, 23, 0.527);
+  width: 100%;
+  text-align: center;
+  padding: 2em 0;
+  border-radius: 15px;
+}
+.beneficiaries-section .container .wrap div {
+  margin-bottom: 1em;
+}
+.beneficiaries-section .container .wrap div img {
+  width: 80%;
+  margin: 0 auto;
+  display: inline-block;
+}
+.beneficiaries-section .container .wrap .text-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+.beneficiaries-section .container .wrap .text-wrap .text {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  text-align: left;
+  margin-bottom: 2em;
+  color: #fff;
+}
+.beneficiaries-section .container .wrap .text-wrap .ben-name {
+  border: 1.5px solid #f7b401;
+  padding: 0.5em 0;
+  border-radius: 40px;
+  color: #fff;
+}
+.beneficiaries-section .container .wrap .text-wrap .ben-name span {
+  font-size: 0.7rem;
 }
 
 *,
