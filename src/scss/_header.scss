@@ -1,0 +1,93 @@
+@import 'global';
+
+.header {
+	height: 15vh;
+
+	.header-container {
+		width: 90%;
+		margin: 0 auto;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+		position: relative;
+
+		.brand-wrap {
+			display: inline-block;
+
+			.brand-img {
+				width: 80px;
+			}
+		}
+
+		.navbar {
+			position: fixed;
+			background: teal;
+			width: 90%;
+			height: 400px;
+			top: 15vh;
+			left: 10%;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			z-index: 2;
+
+			.nav-links {
+				height: fit-content;
+				display: grid;
+				gap: 4.5em;
+				text-align: center;
+			}
+		}
+
+		.hamburger-menu {
+			cursor: pointer;
+
+			i {
+				font-size: 1.5rem;
+			}
+		}
+
+		.hamburger-close {
+			display: none;
+			cursor: pointer;
+			i {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			.navbar {
+				width: 50%;
+				left: 40%;
+				border-radius: 20px;
+			}
+		}
+
+		@media screen and (min-width: 62em) {
+			.navbar {
+				all: unset;
+				width: 400px;
+
+				.nav-links {
+					all: unset;
+					display: flex;
+					justify-content: space-between;
+				}
+			}
+
+			.hamburger-menu {
+				display: none;
+			}
+
+			.hamburger-close {
+				display: none;
+			}
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}

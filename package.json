@@ -1,0 +1,17 @@
+{
+	"name": "firstpoint-foundation-project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "eleventy --serve",
+		"build": "eleventy",
+		"build:sass": "sass --watch src/scss/main.scss src/css/main.css"
+	},
+	"author": "Victor Sky Emejor",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"sass": "^1.63.6"
+	}
+}

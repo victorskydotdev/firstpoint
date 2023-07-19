@@ -1,0 +1,91 @@
+@import 'global';
+
+.main {
+	padding-top: 5em;
+	position: relative;
+	margin-bottom: 4em;
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		gap: 4em;
+
+		.masthead-wrap {
+			.pre-text {
+				color: $accent-color;
+				font-weight: $font-medium;
+				margin-bottom: 0.5em;
+			}
+
+			.masthead {
+				color: $dominant-color;
+				margin-bottom: 1em;
+			}
+
+			.button {
+				font-size: 1rem;
+				background: $accent-color;
+				padding: 1.3em 3em;
+				display: inline-block;
+				border-radius: 15px;
+				font-weight: $font-medium;
+				color: $light;
+			}
+		}
+
+		.image-wrap {
+			padding-bottom: 3em;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.gradient-wrap {
+		background: $gradient;
+		height: 200px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		z-index: -1;
+	}
+
+	@media screen and (min-width: 43em) {
+		.container {
+			width: 60%;
+		}
+	}
+
+	@media screen and (min-width: 62em) {
+		height: 90vh;
+
+		.container {
+			width: 80%;
+			display: flex;
+			grid-template-columns: repeat(2, 1fr);
+			align-items: center;
+
+			.masthead-wrap {
+				max-width: 550px;
+
+				.pre-text {
+					font-size: 1.4rem;
+				}
+
+				.masthead {
+					font-size: 45px;
+				}
+			}
+
+			.image-wrap {
+				position: absolute;
+				right: 0;
+				top: 10%;
+				img {
+					width: 500px;
+				}
+			}
+		}
+	}
+}

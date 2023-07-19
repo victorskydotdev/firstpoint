@@ -1,0 +1,50 @@
+@import 'global';
+
+.about-snippet {
+	margin-bottom: 5em;
+	.container {
+		width: 90%;
+		background: $accent-color;
+		margin-left: 1em;
+		position: relative;
+		min-height: 250px;
+		border-radius: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 3em;
+
+		.snippet-heading {
+			position: absolute;
+			font-size: 1.7rem;
+			color: $dominant-color;
+			top: -20px;
+			left: 30px;
+		}
+
+		.snippet-text {
+			line-height: 1.6;
+			color: $light;
+			max-width: 500px;
+		}
+
+		.button {
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			color: $body-heading-text-color;
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 70%;
+			margin-left: 3em;
+			padding: unset;
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 60%;
+			margin-left: 5em;
+			padding: unset;
+		}
+	}
+}

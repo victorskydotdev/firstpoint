@@ -1,0 +1,77 @@
+@import 'global';
+
+.programs {
+	margin-bottom: 7em;
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		gap: 2em;
+		margin-bottom: 4em;
+
+		.text-area {
+			.heading {
+				color: $dominant-color;
+				font-size: $heading-font-size;
+				margin-bottom: 0.5em;
+
+				span {
+					color: $accent-color;
+				}
+			}
+
+			.text {
+				font-size: 0.9rem;
+				line-height: 1.7;
+				color: $body-paragraph-text-color;
+			}
+		}
+
+		.image-box {
+			background: $accent-color;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			aspect-ratio: 4/3;
+			border-radius: 15px;
+
+			img {
+				width: 200px;
+				border-radius: 15px;
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 60%;
+			text-align: center;
+		}
+
+		@media screen and (min-width: 62em) {
+			width: 80%;
+			text-align: left;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 8em;
+		}
+	}
+
+	.media-scroller {
+		display: grid;
+		grid-auto-flow: column;
+		grid-auto-columns: 400px;
+		overflow-x: auto;
+		overscroll-behavior-inline: contain;
+		-ms-scroll-snap-type: inline mandatory;
+		scroll-snap-type: inline mandatory;
+		padding: 2em 1em;
+		gap: 2em;
+
+		.scrollable-box {
+			height: 300px;
+			background: $accent-color;
+			border-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
