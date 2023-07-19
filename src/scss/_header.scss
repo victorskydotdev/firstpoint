@@ -74,12 +74,19 @@
 		@media screen and (min-width: 62em) {
 			.navbar {
 				all: unset;
-				width: 400px;
+				width: 300px;
 
 				.nav-links {
 					all: unset;
 					display: flex;
 					justify-content: space-between;
+
+					.link {
+						a {
+							color: $body-heading-text-color;
+							font-weight: $font-semi;
+						}
+					}
 				}
 			}
 

@@ -42,6 +42,7 @@
 					position: absolute;
 					top: 100%;
 					left: 23%;
+					color: $accent-color;
 				}
 			}
 		}
@@ -73,7 +74,7 @@
 
 				.text {
 					display: flex;
-					align-items: center;
+					align-items: flex-start;
 
 					.caps {
 						width: 100%;

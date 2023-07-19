@@ -1,0 +1,62 @@
+@import 'global';
+
+.our-team-section {
+	margin-bottom: 6em;
+	.text-wrap {
+		margin-bottom: 2em;
+		.heading {
+			text-align: center;
+			font-size: $heading-font-size;
+			font-weight: $font-semi;
+			color: $dominant-color;
+		}
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		display: grid;
+		gap: 2em;
+
+		.team-member-wrap {
+			background: $light;
+			box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.18);
+			text-align: center;
+			padding: 2em 0;
+			border-radius: 15px;
+
+			img {
+				width: 60%;
+				margin-bottom: 2em;
+				border-radius: 15px;
+			}
+
+			.member-details {
+				width: 90%;
+				margin: 0 auto;
+				text-align: left;
+
+				h4 {
+					margin-bottom: 0.5em;
+				}
+
+				p {
+					margin-bottom: 1em;
+					color: $body-paragraph-text-color;
+					font-size: 0.9rem;
+					line-height: 1.9;
+				}
+			}
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 70%;
+		}
+
+		@media screen and (min-width: 62em) {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			width: 80%;
+		}
+	}
+}

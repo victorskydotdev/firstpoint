@@ -9,6 +9,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 *,
 *::before,
 *::after {
@@ -95,12 +96,16 @@ body {
 @media screen and (min-width: 62em) {
   .header .header-container .navbar {
     all: unset;
-    width: 400px;
+    width: 300px;
   }
   .header .header-container .navbar .nav-links {
     all: unset;
     display: flex;
     justify-content: space-between;
+  }
+  .header .header-container .navbar .nav-links .link a {
+    color: #4f4f4f;
+    font-weight: 600;
   }
   .header .header-container .hamburger-menu {
     display: none;
@@ -278,6 +283,7 @@ body {
   position: absolute;
   top: 100%;
   left: 23%;
+  color: #f7b401;
 }
 .welcome-address-section .container .image-wrap {
   display: none;
@@ -302,7 +308,7 @@ body {
   }
   .welcome-address-section .container .text-wrap .text {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .welcome-address-section .container .text-wrap .text .caps {
     width: 100%;
@@ -922,6 +928,87 @@ body {
     border-radius: 15px;
     left: 34%;
     top: 370px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.our-team-section {
+  margin-bottom: 6em;
+}
+.our-team-section .text-wrap {
+  margin-bottom: 2em;
+}
+.our-team-section .text-wrap .heading {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #004517;
+}
+.our-team-section .container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2em;
+}
+.our-team-section .container .team-member-wrap {
+  background: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.18);
+  text-align: center;
+  padding: 2em 0;
+  border-radius: 15px;
+}
+.our-team-section .container .team-member-wrap img {
+  width: 60%;
+  margin-bottom: 2em;
+  border-radius: 15px;
+}
+.our-team-section .container .team-member-wrap .member-details {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+}
+.our-team-section .container .team-member-wrap .member-details h4 {
+  margin-bottom: 0.5em;
+}
+.our-team-section .container .team-member-wrap .member-details p {
+  margin-bottom: 1em;
+  color: #a6a6a6;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+@media screen and (min-width: 43em) {
+  .our-team-section .container {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 62em) {
+  .our-team-section .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
   }
 }
 
