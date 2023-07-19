@@ -1,0 +1,39 @@
+@import 'global';
+
+.who-we-are-section {
+	margin-bottom: 5em;
+	.container {
+		background: url('/assets/grid.svg') center/cover, no-repeat;
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		padding: 2em;
+
+		.heading {
+			border: 1.5px solid $dominant-color;
+			display: inline-block;
+			padding: 1em;
+			border-radius: 40px;
+			color: $dominant-color;
+			margin-bottom: 2em;
+		}
+
+		.text {
+			font-size: 0.9rem;
+			line-height: 1.8;
+			color: $body-paragraph-text-color;
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 60%;
+
+			height: 400px;
+		}
+
+		@media screen and (min-width: 62em) {
+			width: 50%;
+
+			height: 400px;
+		}
+	}
+}

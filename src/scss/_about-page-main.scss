@@ -1,0 +1,76 @@
+@import 'global';
+
+.about-main-section {
+	height: 80vh;
+	position: relative;
+
+	padding-top: 8em;
+	margin-bottom: 5em;
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+
+		display: grid;
+		align-items: center;
+
+		.text {
+			color: $accent-color;
+			font-weight: $font-medium;
+		}
+
+		.heading-text {
+			color: $dominant-color;
+			text-transform: capitalize;
+
+			gap: 10px;
+			font-size: $heading-font-size;
+			margin-bottom: 1em;
+
+			.flex {
+				display: flex;
+				gap: 6px;
+
+				span {
+					color: $accent-color;
+				}
+
+				img {
+					width: 50px;
+				}
+			}
+		}
+
+		.smooth-scroll-btn {
+			font-size: 1rem;
+			background: $accent-color;
+			padding: 1em 3em;
+			display: inline-block;
+			border-radius: 15px;
+			font-weight: $font-medium;
+			color: $light;
+			width: fit-content;
+		}
+
+		@media screen and (min-width: 43em) {
+			width: 60%;
+		}
+
+		@media screen and (min-width: 62em) {
+			width: 40%;
+
+			.heading-text {
+				font-size: 2rem;
+			}
+		}
+	}
+
+	.gradient-wrap {
+		background: $gradient;
+		height: 200px;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
