@@ -1001,25 +1001,27 @@ body {
   margin-bottom: 0.6em;
   font-size: 0.9rem;
 }
-.our-team-section .container .team-member-wrap .member-details p {
+.our-team-section .container .team-member-wrap .member-details .profile {
   color: #a6a6a6;
   font-size: 0.9rem;
   margin-bottom: 0.5em;
+  line-height: 1.9;
 }
-.our-team-section .container .team-member-wrap .member-details .readmore-btn {
+.our-team-section .container .team-member-wrap .member-details .profile .readmore-btn {
   background: transparent;
   border: none;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
-.our-team-section .container .team-member-wrap .member-details .readmore {
-  display: none;
+.our-team-section .container .team-member-wrap .member-details .profile .readmore-active {
+  display: block;
 }
-.our-team-section .container .team-member-wrap .member-details .readmore p {
-  margin-bottom: 1em;
-  color: #a6a6a6;
-  font-size: 0.9rem;
-  line-height: 1.9;
+.our-team-section .container .team-member-wrap .member-details .profile .readmore-profile {
+  margin-bottom: 2em;
+  display: inline-block !important;
+}
+.our-team-section .container .team-member-wrap .member-details .profile .collapse {
+  display: none;
 }
 @media screen and (min-width: 43em) {
   .our-team-section .container {
@@ -1028,14 +1030,16 @@ body {
 }
 @media screen and (min-width: 62em) {
   .our-team-section .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    display: flex;
+    width: 90%;
+  }
+  .our-team-section .container .team-member-wrap {
+    flex-basis: auto;
   }
 }
 
-.readmore-active {
-  display: block;
+.height {
+  max-height: 400 !important;
 }
 
 *,
