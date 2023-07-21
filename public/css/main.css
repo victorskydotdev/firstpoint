@@ -1008,10 +1008,15 @@ body {
   line-height: 1.9;
 }
 .our-team-section .container .team-member-wrap .member-details .profile .readmore-btn {
+  cursor: pointer;
   background: transparent;
   border: none;
+  background: #f7b401;
   font-family: "Poppins", sans-serif;
-  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.7em;
+  border-radius: 9px;
+  color: #fff;
 }
 .our-team-section .container .team-member-wrap .member-details .profile .expanded-read1,
 .our-team-section .container .team-member-wrap .member-details .profile .expanded-read2,
@@ -1024,6 +1029,17 @@ body {
 .our-team-section .container .team-member-wrap .member-details .profile .readmore-profile {
   margin-bottom: 2em;
   display: inline-block !important;
+}
+.our-team-section .container .team-member-wrap .member-details .profile .collapse {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  background: #f7b401;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  padding: 0.7em;
+  border-radius: 9px;
+  color: #fff;
 }
 @media screen and (min-width: 43em) {
   .our-team-section .container {

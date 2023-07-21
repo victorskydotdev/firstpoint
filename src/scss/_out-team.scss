@@ -56,11 +56,15 @@
 					line-height: 1.9;
 
 					.readmore-btn {
+						cursor: pointer;
 						background: transparent;
 						border: none;
+						background: $accent-color;
 						font-family: $font-family;
-						cursor: pointer;
-						// display: none;
+						font-size: 0.9rem;
+						padding: 0.7em;
+						border-radius: 9px;
+						color: $light;
 					}
 
 					.expanded-read1,
@@ -76,6 +80,18 @@
 					.readmore-profile {
 						margin-bottom: 2em;
 						display: inline-block !important;
+					}
+
+					.collapse {
+						cursor: pointer;
+						background: transparent;
+						border: none;
+						background: $accent-color;
+						font-family: $font-family;
+						font-size: 0.9rem;
+						padding: 0.7em;
+						border-radius: 9px;
+						color: $light;
 					}
 				}
 			}
