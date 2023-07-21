@@ -1013,15 +1013,17 @@ body {
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
+.our-team-section .container .team-member-wrap .member-details .profile .expanded-read1,
+.our-team-section .container .team-member-wrap .member-details .profile .expanded-read2,
+.our-team-section .container .team-member-wrap .member-details .profile .expanded-read3 {
+  display: none;
+}
 .our-team-section .container .team-member-wrap .member-details .profile .readmore-active {
   display: block;
 }
 .our-team-section .container .team-member-wrap .member-details .profile .readmore-profile {
   margin-bottom: 2em;
   display: inline-block !important;
-}
-.our-team-section .container .team-member-wrap .member-details .profile .collapse {
-  display: none;
 }
 @media screen and (min-width: 43em) {
   .our-team-section .container {
@@ -1030,13 +1032,18 @@ body {
 }
 @media screen and (min-width: 62em) {
   .our-team-section .container {
-    display: flex !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 90%;
   }
 }
 
 .height {
   height: fit-content;
+}
+
+.same-height {
+  height: max-content;
 }
 
 *,

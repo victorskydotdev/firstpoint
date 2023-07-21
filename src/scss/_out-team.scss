@@ -63,12 +63,11 @@
 						// display: none;
 					}
 
-					// .expanded-read1,
-					// .expanded-read2,
-					// .expanded-read3 {
-					// 	// display: none;
-
-					// }
+					.expanded-read1,
+					.expanded-read2,
+					.expanded-read3 {
+						display: none;
+					}
 
 					.readmore-active {
 						display: block;
@@ -77,10 +76,6 @@
 					.readmore-profile {
 						margin-bottom: 2em;
 						display: inline-block !important;
-					}
-
-					.collapse {
-						display: none;
 					}
 				}
 			}
@@ -91,8 +86,8 @@
 		}
 
 		@media screen and (min-width: 62em) {
-			display: flex !important;
-			// grid-template-columns: repeat(3, 1fr);
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
 			width: 90%;
 
 			// .team-member-wrap {
@@ -103,4 +98,8 @@
 
 .height {
 	height: fit-content;
+}
+
+.same-height {
+	height: max-content;
 }
