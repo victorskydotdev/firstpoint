@@ -91,17 +91,16 @@
 		}
 
 		@media screen and (min-width: 62em) {
-			display: flex;
+			display: flex !important;
 			// grid-template-columns: repeat(3, 1fr);
 			width: 90%;
 
-			.team-member-wrap {
-				flex-basis: auto;
-			}
+			// .team-member-wrap {
+			// }
 		}
 	}
 }
 
 .height {
-	max-height: 400 !important;
+	height: fit-content;
 }

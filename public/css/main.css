@@ -1030,16 +1030,13 @@ body {
 }
 @media screen and (min-width: 62em) {
   .our-team-section .container {
-    display: flex;
+    display: flex !important;
     width: 90%;
-  }
-  .our-team-section .container .team-member-wrap {
-    flex-basis: auto;
   }
 }
 
 .height {
-  max-height: 400 !important;
+  height: fit-content;
 }
 
 *,
